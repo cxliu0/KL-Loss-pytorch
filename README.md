@@ -88,11 +88,11 @@ Please refer to [faster_rcnn_r50_fpn_coco_kl.py](configs/_base_/models/faster_rc
 
 ## Inference
 
-- Download pretrained FasterRCNN model from [google drive](https://drive.google.com/file/d/1KZxF8n6SXhoZHX-EyHpP8LID1EtFDrWu/view?usp=sharing), and put it on "./pretrained_model/" directory (you can also use your locally trained model)
+- Download pretrained FasterRCNN model from [google drive](https://drive.google.com/file/d/1KZxF8n6SXhoZHX-EyHpP8LID1EtFDrWu/view?usp=sharing), and put it in "./pretrained_model/" directory (you can also use your locally trained model)
 
 - Modify [test.sh](test.sh)
 ```
-/path/to/model_checkpoint ---> modify it to the path of model checkpoint (e.g., ./pretrained_model/kl_model.pth)
+/path/to/model_checkpoint ---> ./pretrained_model/kl_model.pth (or your locally trained model path)
 ```
 
 - Modify [faster_rcnn_r50_fpn_coco_kl.py](configs/_base_/models/faster_rcnn_r50_fpn_coco_kl.py)
