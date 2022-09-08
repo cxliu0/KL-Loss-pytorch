@@ -16,7 +16,7 @@ A pytorch reimplementation of the paper:
 | :heavy_check_mark: | :heavy_check_mark: | :x:                |    38.8    | **39.8**  |
 | :heavy_check_mark: | :heavy_check_mark: | :heavy_check_mark: |    39.2    | **40.2**  |
 
-- This repository is based on [mmdetection](https://github.com/open-mmlab/mmdetection). Pretrained FasterRCNN model is avaliable at [google drive](https://drive.google.com/file/d/1KZxF8n6SXhoZHX-EyHpP8LID1EtFDrWu/view?usp=sharing).
+- This repository is based on [mmdetection](https://github.com/open-mmlab/mmdetection). Pretrained FasterRCNN model is available at [google drive](https://drive.google.com/file/d/1KZxF8n6SXhoZHX-EyHpP8LID1EtFDrWu/view?usp=sharing).
 
 
 ## Installation
@@ -123,7 +123,6 @@ Average Recall     (AR) @[ IoU=0.50:0.95 | area=medium | maxDets=1000 ] = 0.604
 Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.717                                                   
 {'bbox_mAP': 0.402, 'bbox_mAP_50': 0.587, 'bbox_mAP_75': 0.438, 'bbox_mAP_s': 0.223, 'bbox_mAP_m': 0.44, 'bbox_mAP_l': 0.529, 'bbox_mAP_copypaste': '0.402 0.587 0.438 0.223 0.440 0.529'}                                 
 ```
-
 
 ## Acknowlegdement
 
