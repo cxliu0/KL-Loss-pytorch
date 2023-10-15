@@ -7,7 +7,7 @@ A pytorch reimplementation of the paper:
 
 ## Highlights
 
-- We trained KL-Loss with ResNet50-FPN for 2x schedule following the original paper. The results on COCO dataset are as follows:
+- We trained KL-Loss with ResNet50-FPN for 2x schedule following the original paper. The results on the COCO dataset are as follows:
 
 |       KL Loss      |       Var Vote     |       soft-NMS     | AP (Paper) | AP (Ours) |
 | :----------------: | :----------------: | :----------------: | :--------: | :-------: | 
@@ -18,6 +18,7 @@ A pytorch reimplementation of the paper:
 
 - This repository is based on [mmdetection](https://github.com/open-mmlab/mmdetection). Pretrained FasterRCNN model is available at [google drive](https://drive.google.com/file/d/1KZxF8n6SXhoZHX-EyHpP8LID1EtFDrWu/view?usp=sharing).
 
+- Loss computation can be found in [convfc_bbox_head_kl.py](https://github.com/cxliu0/KL-Loss-pytorch/blob/main/mmdet/models/roi_heads/bbox_heads/convfc_bbox_head_kl.py#L332)
 
 ## Installation
 
@@ -56,7 +57,7 @@ pip install -e .
 
 ## Data Preparation
 
-- Download [COCO](https://cocodataset.org/#download) datasets. The direcory structure is expected to be as follow:
+- Download [COCO](https://cocodataset.org/#download) datasets. The directory structure is expected to be as follows:
 
 ```
 KL-Loss-pytorch
@@ -124,7 +125,7 @@ Average Recall     (AR) @[ IoU=0.50:0.95 | area= large | maxDets=1000 ] = 0.717
 {'bbox_mAP': 0.402, 'bbox_mAP_50': 0.587, 'bbox_mAP_75': 0.438, 'bbox_mAP_s': 0.223, 'bbox_mAP_m': 0.44, 'bbox_mAP_l': 0.529, 'bbox_mAP_copypaste': '0.402 0.587 0.438 0.223 0.440 0.529'}                                 
 ```
 
-## Acknowlegdement
+## Acknowledgement
 
 - This repository is based on [mmdetection](https://github.com/open-mmlab/mmdetection)
 
